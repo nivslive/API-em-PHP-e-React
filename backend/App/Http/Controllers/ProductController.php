@@ -20,6 +20,11 @@ class ProductController extends Controller
      }
 
 
+	 public function index() {
+
+	 }
+
+
     public function insert() { 
             
             $database['name'] = 'Maçã';
@@ -77,7 +82,7 @@ class ProductController extends Controller
 				'status_message' =>'Product Addition Failed.'
 			);
 		}
-		header('Content-Type: application/json');
+		
 		echo json_encode($response);
 	}
 
