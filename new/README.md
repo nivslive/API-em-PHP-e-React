@@ -23,8 +23,8 @@
 * * cd backend
 * * mkdir .env
 * * cp .env.example .env
-* * php -S localhost:8000 -t public
 * * php artisan migrate
+* * php -S localhost:8000 -t public
 * * URL Utilizada no sistema: http://localhost:8000/ (ver mais em Routes/Web.php)
 
 ****************************
