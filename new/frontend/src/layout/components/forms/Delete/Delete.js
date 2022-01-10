@@ -13,12 +13,8 @@ function App() {
     const [data, setData] = useState({});
 
 
-    //
-
-
     const baseURL = "http://localhost:8000/api/delete-all-products";
-    
-
+  
 
     const onSubmit = (data) => { setData(data);
           
@@ -28,14 +24,16 @@ function App() {
           //const baseURI = `?msg=test&name="${data.name}"&desc=${data.desc}`;
 
 
-          axios.get(baseURL).then(response => console.log(response)); };
+          axios.get(baseURL).then(response => console.log(response)); 
+          window.location.reload(); 
+        };
 
     //if (!onSubmit) return null;
 
     return (
       <>
       
-      <button onClick={() => onSubmit()}> Deletar todos </button>
+      <button className="btn btn-danger" onClick={() => onSubmit()}> Deletar todos </button>
        
       </>
     );
